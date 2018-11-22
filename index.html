@@ -6,31 +6,127 @@
 <title>Главная</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/my_styles.css">
-<!-- <script src="javascript/myJavascript.js"></script> -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
-<script type="text/javascript">$(document).ready(function(){$(".owl-carousel").owlCarousel();
-});</script>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/myJavascript.js"></script>
+<script type="text/javascript" src="javascript/owl.carousel.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:false,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+});
+</script>
 </head>
 <body>
 <div class="container">
 	<div class="row">
-		<div class="col-12"><img src="images/images-1.jpg" alt="img"></div>
+		<div class="col-12 first-images"><img src="images/images-1.jpg" alt="img"></div>
 	</div>
 </div>
-<div class="owl-carousel">
-	<div><img src="images/images-2.jpg" alt=""></div>
-	<div><img src="images/images-1.jpg" alt=""></div>
-	<div><img src="images/images-2.jpg" alt=""></div>
-	<div><img src="images/images-1.jpg" alt=""></div>
-	<div><img src="images/images-2.jpg" alt=""></div>
-	<div><img src="images/images-1.jpg" alt=""></div>
-	<div><img src="images/images-2.jpg" alt=""></div>
-	<div><img src="images/images-1.jpg" alt=""></div>
+<div class="container">
+	<div class="row">
+		<div class="col-12 my-blok-first">
+			<div class="owl-carousel owl-theme">
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+				<div class="relative">
+					<img src="images/images-2.jpg">
+					<div class="absolute">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam assumenda fuga commodi inventore suscipit ut sapiente cumque placeat, quasi, est magni, quibusdam quos mollitia illum.</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row no-gutters my-row">
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Accomodation</a></li>
+				<li><a href="#">FunShop</a></li>
+				<li><a href="#">Marriage agency</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Info</a></li>
+				<li><a href="#">News</a></li>
+			</ul>
+		</nav>
+		<div class="support">
+			<form>
+				<input type="button" value="Online support">
+			</form>
+		</div>
+	</div>
 </div>
 </body>
 </html>
