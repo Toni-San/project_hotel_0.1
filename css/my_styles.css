@@ -32,7 +32,6 @@ html body {
 	color: #fff;
 	font-weight: 300;
 }
-
 /*my-blok-first*/
 /**/
 .my-row {
@@ -47,11 +46,10 @@ html body {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
-
 }
 .menu ul li {
-display: flex;
-margin: 5px;
+	display: flex;
+	margin: 5px;
 }
 .menu ul li a {
 	flex-grow: 1;
@@ -64,10 +62,8 @@ margin: 5px;
 	text-decoration: none;
 }
 .support {
-
 }
 .support form {
-
 }
 .support form input {
 	border: 0;
@@ -80,25 +76,27 @@ margin: 5px;
 	background-color: #b2b2b2;
 	color: red;
 }
+
 @media (min-width: 768px) {
-	.menu ul {
-		flex-direction: row;
-	}
-	.menu ul li {
-		text-align: center;
-		flex-grow: 1;
-	}
+.menu ul {
+	flex-direction: row;
 }
+.menu ul li {
+	text-align: center;
+	flex-grow: 1;
+}
+}
+
 @media (min-width: 992px) {
-	.my-row {
-		flex-direction: row;
-	}
-	.menu {
-		flex-grow: 1;
-	}
-	.support form input {
+.my-row {
+	flex-direction: row;
+}
+.menu {
+	flex-grow: 1;
+}
+.support form input {
 	width: 180px;
 	height: 40px;
-	}
+}
 }
 /**/
