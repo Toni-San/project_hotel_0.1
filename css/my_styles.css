@@ -32,6 +32,10 @@ html body {
 	color: #fff;
 	font-weight: 300;
 }
+.absolute a {
+	color: #FFFFFF;
+	font-weight: 300;
+}
 /*my-blok-first*/
 /**/
 .my-row {
@@ -79,6 +83,7 @@ html body {
 
 @media (min-width: 768px) {
 .menu ul {
+	height: 40px;
 	flex-direction: row;
 }
 .menu ul li {
@@ -94,9 +99,17 @@ html body {
 .menu {
 	flex-grow: 1;
 }
+	.support form {
+	margin-left: 3px;
+}
 .support form input {
 	width: 180px;
 	height: 40px;
 }
+}
+/**/
+/**/
+.main-block-header h1 {
+	color: #FFFFFF;
 }
 /**/
