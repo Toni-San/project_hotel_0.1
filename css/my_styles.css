@@ -112,11 +112,13 @@ html body {
 
 .main-block-header h1 {
 /*	color: #FFFFFF;*/
+order: 0;
 }
 .information {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	order: 2;
 }
 .information li div {
 	display: flex;
@@ -127,7 +129,8 @@ html body {
 	margin: 3px;
 }
 .time {
-	
+	align-self: flex-end;
+	order: 1;
 }
 .time div {
 	display: flex;
@@ -140,6 +143,8 @@ html body {
 }
 .social-networks {
 	display: flex;
+	justify-content: space-around;
+	order: 3;
 }
 .social-networks a {
 	color: #000000;
@@ -147,5 +152,27 @@ html body {
 .social-networks a:hover {
 	color: #FFFFFF;
 	background-color: #000000
+}
+@media (min-width: 576px) {
+	.my-row {
+		flex-direction: row;;
+	}
+	.main-block-header{
+		flex-grow: 1;
+	}
+	.information {
+		display: flex;
+	}
+	.time {
+		align-self: center;
+	}
+	.social-networks {
+		flex-grow: 1;
+	}
+}
+@media (min-width: 768px) {
+	.main-blok-header, .information, .time, .social-networks {
+		order: 0;
+	}
 }
 /**/
