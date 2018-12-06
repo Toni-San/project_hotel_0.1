@@ -1,5 +1,12 @@
 
-.icon-twitter-circled:before { content: '\f057'; } /* '' */
-.icon-youtube:before { content: '\f167'; } /* '' */
-.icon-vkontakte:before { content: '\f189'; } /* '' */
-.icon-facebook-rect:before { content: '\f301'; } /* '' */
+.icon-home:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e801'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
+.icon-dollar:before { content: '\e803'; } /* '' */
+.icon-clock:before { content: '\e804'; } /* '' */
+.icon-vk:before { content: '\e805'; } /* '' */
+.icon-youtube:before { content: '\e806'; } /* '' */
+.icon-euro:before { content: '\f153'; } /* '' */
+.icon-dollar-1:before { content: '\f155'; } /* '' */
+.icon-twitter:before { content: '\f309'; } /* '' */
+.icon-facebook:before { content: '\f30c'; } /* '' */

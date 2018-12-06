@@ -184,6 +184,44 @@ html body {
 }
 }
 /**/
+
 /**/
 
 /**/
+
+/*footer*/
+.my-row-3 {
+	justify-content: center;
+	min-height: 30px;
+	align-items: center;
+}
+.basement-info {
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.basement-info li a {
+	color: #000000;
+}
+.basement-info li a:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+@media (min-width: 576px) {
+.my-row-3 {
+	justify-content: space-between;
+}
+}
+/*
+@media (min-width: 768px) {
+	.basement-info {
+		flex-grow: 1;
+	}
+}
+*/
+/*footer*/
