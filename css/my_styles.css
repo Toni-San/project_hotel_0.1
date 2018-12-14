@@ -186,6 +186,44 @@ html body {
 }
 /**/
 
+/**/
+.login {
+	display: flex;
+	flex-direction: column;
+	background-color: #B95A5A;
+}
+.login h5 {
+	margin: 5px;
+	font-size: 1.5em;
+}
+.login>form {
+	width: 345px;
+	height: 70px;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login>form>div:nth-of-type(1)>input {
+	margin: 3px;
+	border: solid 1px #000000;
+	padding: 3px;
+	width: 120px;
+}
+.login>form>div:nth-of-type(1)>input:nth-of-type(3) {
+	width: 45px;
+}
+.login>div {
+	border-top: solid 1px #000000;
+	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+.login>div>a {
+}
+/**/
+
 /*footer*/
 .my-row-3 {
 	justify-content: center;
