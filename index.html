@@ -159,32 +159,62 @@ $('.stop').on('click',function(){
 <div class="container">
 	<div class="row">
 		<div class="login col-12">
-		<h5>Login</h5>
-		<form action="#" method="#" name="login">
-			<div>
-				<input type="text" placeholder="Login" required>
-				<input type="password" placeholder="password" required>
-				<input type="submit" value=">>">
-			</div>
-			<div>
-				<input type="checkbox">
-				<label for="">Remember me</label>
-				<input type="checkbox">
-				<label for="">Safe input</label>
-			</div>
-		</form>
-		<div>
-			<a href="#">Forgotten the password</a>
-			<a href="#">Registration</a>
+			<h5>Login</h5>
+			<form action="#" method="#" name="login">
+				<div>
+					<input type="text" placeholder="Login" required>
+					<input type="password" placeholder="password" required>
+					<input type="submit" value=">>">
+				</div>
+				<div>
+					<input type="checkbox" id="remember-me">
+					<label for="remember-me">Remember me</label>
+					<input type="checkbox" id="safe-input">
+					<label for="safe-input">Safe input</label>
+				</div>
+			</form>
+			<div> <a href="#">Forgotten the password</a> <a href="#">Registration</a> </div>
 		</div>
-		</div>
-		<div class="accomodation">
+		<div class="accomodation col-12">
 			<h5>Accomodation</h5>
-			<div>1</div>
-			<div>2</div>
-			<div>3</div>
-			<div>4</div>
-			<div>5</div>
+			<div class="step-1">
+				<div><span>Шаг №1.</span><span>(сколько вас едет?)</span></div>
+				<!--переделать ползунок-->
+				<form action="#" method="#">
+					<input type="range" min="1" max="30" step="1" value="1">
+				</form>
+			</div>
+			<div class="step-2">
+				<div><span>Шаг №2.</span><span>(как вы хотите добраться?)</span></div>
+				<form action="#" method="#">
+					<div>
+						<label for="aircraft">Добавить/Убрать</label>
+						<input type="checkbox" name="transport" id="aircraft">
+						<span>самолет</span><span>(до 1 дня)</span></div>
+					<div>
+						<label for="train">Добавить/Убрать</label>
+						<input type="checkbox" name="transport" id="train">
+						<span>поезд</span><span>(от 3 до 5 дней)</span></div>
+					<div>
+						<label for="bus">Добавить/Убрать</label>
+						<input type="checkbox" name="transport" id="bus">
+						<span>автбус</span><span>(от 2 до 4 дней)</span></div>
+					<div>
+						<label for="their-own-move">Добавить/Убрать</label>
+						<input type="checkbox" name="transport" id="their-own-move">
+						<span>своим ходом</span><span>(от 5 дней)</span></div>
+				</form>
+				<img src="images/images-3.jpg" alt="img">
+			</div>
+			<div class="step-3">
+				<div><span>Шаг №3.</span><span>(где вы планируете жить?)</span></div>
+			</div>
+			<div class="step-4">
+				<div><span>Шаг №4.</span><span>(как хотите развлечься?)</span></div>
+			</div>
+			<div class="step-5">
+				<div><span>Шаг №5.</span><span>(дополнительные опции)</span></div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -198,7 +228,9 @@ $('.stop').on('click',function(){
 			<li><a href="#" class="icon-search"></a></li>
 			<li><a href="#" class="icon-mail"></a></li>
 		</ul>
-		<address>2010 &#0169 DonGuide. All rights reserved.</address>
+		<address>
+		2010 &#0169 DonGuide. All rights reserved.
+		</address>
 	</div>
 </footer>
 </body>
